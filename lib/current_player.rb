@@ -11,6 +11,8 @@ def turn_count(board)
 end
 
 #the job of reporting whose turn it currently is, "X" or "O"
-def current_player (game_board)
+def current_player(game_board)
   if turn_count(board).even || turn_count(board).odd
-    return "X" || "O"
+    game_board = "X" || "O"
+  end
+end
