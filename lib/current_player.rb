@@ -12,7 +12,9 @@ end
 
 #the job of reporting whose turn it currently is, "X" or "O"
 def current_player(game_board)
-  if turn_count(game_board).even? || turn_count(game_board).odd?
-    game_board = "X" || "O"
+  if turn_count(game_board).even?
+    game_board = "X"
+  else turn_count(game_board).odd?
+    game_board = "O"
   end
 end
